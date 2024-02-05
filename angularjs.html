@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJs single page application</title>
+</head>
+
+<!-- Include the AngularJS library -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+<body>
+
+        <nav>
+            <div class="header">
+                <img src="./Microsoft.VisualStudio.Services.Icons.Default.png" alt="" width="80px" height="80px"/>
+            </div>
+            
+          
+          
+        </nav>
+      <!-- Create a new module for our app and specify its dependencies-->
+      <div class="zero" ng-app="">
+        <h2> AngularJs Course Login:</h2>
+        <!-- Declare a controller that will control our app's data -->
+        <P>NAME: <input type="text" ng-model="name"></P>
+        <p ng-bind="name"></p>
+        <P>YEAR: <input type="number" ng-model="yr"></P>
+        <p ng-bind="yr"></p>
+        <P>DEPARTMET: <input type="text" ng-model="dept"></P>
+        <p ng-bind="dept"></p>
+        <P>COLLEGE: <input type="text" ng-model="clg"></P>
+        <p ng-bind="clg"></p>
+        <button ng-click="submit()">Submit</button>
+      </div>
+      <div class="footer">
+        <p> AngularJs &copy : 2024</p>
+      </div>
+</body>
+</html>
+<style>
+    body {
+        font-family: sans-serif;
+        background: rgb(154,4,4);
+        background: linear-gradient(90deg, rgba(154,4,4,1) 50%, rgba(247,245,241,1) 100%);;
+        color: aliceblue;
+    
+    }
+    nav{
+        background-color: white;
+        height: 80px;
+    }
+    nav .img {
+        text-align: justify;
+        padding: 20px 20px 20px 20px;
+    }
+    p{
+        line-height: 1.7em;
+        letter-spacing: 1px;
+        align-items: center;
+    }
+    button{
+        float: center;
+        width: 72px;
+        height: 18px;
+    
+    }
+    .zero{
+        text-align: center;
+        border-width: 2px;  
+        border-top-width: 5px;
+
+    }
+
+    .footer{
+        position: fixed;
+        bottom: 0%;
+        left: 0%;
+        background-color: rgb(0, 0, 0);
+        width: 100% ;
+        text-align: center;
+    }
+
+    
+</style>
